@@ -1,10 +1,14 @@
 package com.summitbid.coach
 
-class BaseDomain {
+abstract class BaseDomain {
 	String name
     static constraints = {
 		name(nullable:false)
     }
+	
+	static mapping = {
+		tablePerHierarchy false
+	  }
 	
 	/**
 	* Validates and saves the supplied domain object.

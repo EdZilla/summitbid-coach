@@ -1,10 +1,10 @@
 package com.summitbid.coach.nutrition
 
 
-import com.summitbid.coach.nutrition.MealPlanByCalendar;
+import com.summitbid.coach.nutrition.MealPlan;
 
 
-class MealPlanByCalendar {
+class MealPlan {
 
     static constraints = {
     }
