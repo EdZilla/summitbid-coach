@@ -1,0 +1,6 @@
+package com.summitbid.coach
+description "this is how a description for a spec looks"
+
+before "you do anything for this spec, do this"
+
+it "shall behave this way"
