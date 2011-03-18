@@ -2,3 +2,6 @@
 /cobertura.ser
 /target
 /target
+/tomcat-1.3.6-src-groovy
+/code-coverage-1.1.8-grails-app-i18n
+/easyb-2.0.5-src-groovy
