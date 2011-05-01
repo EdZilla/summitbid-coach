@@ -5,5 +5,8 @@
         <wb-resource deploy-path="/" source-path="/.link_to_grails_plugins/easyb-2.0.5/src/groovy"/>
         <wb-resource deploy-path="/" source-path="/.link_to_grails_plugins/tomcat-1.3.7/src/groovy"/>
         <wb-resource deploy-path="/" source-path="/.link_to_grails_plugins/code-coverage-1.2/grails-app/i18n"/>
+        <wb-resource deploy-path="/" source-path="/.link_to_grails_plugins/fixtures-1.0.5/grails-app/conf"/>
+        <wb-resource deploy-path="/" source-path="/.link_to_grails_plugins/fixtures-1.0.5/src/java"/>
+        <wb-resource deploy-path="/" source-path="/.link_to_grails_plugins/fixtures-1.0.5/src/groovy"/>
     </wb-module>
 </project-modules>

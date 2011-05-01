@@ -7,4 +7,9 @@ class Food extends BaseDomain {
     static constraints = {
 		nutritionInfo(nullable:true)
     }
+	
+//	String toString()
+//	{
+//		println "food: ${this.name}"
+//	}
 }
