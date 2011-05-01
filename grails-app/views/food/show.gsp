@@ -36,6 +36,13 @@
                             
                         </tr>
                     
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="food.nutritionInfo.label" default="Nutrition Info" /></td>
+                            
+                            <td valign="top" class="value"><g:link controller="nutritionInfo" action="show" id="${foodInstance?.nutritionInfo?.id}">${foodInstance?.nutritionInfo?.encodeAsHTML()}</g:link></td>
+                            
+                        </tr>
+                    
                     </tbody>
                 </table>
             </div>

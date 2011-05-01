@@ -37,6 +37,15 @@
                                 </td>
                             </tr>
                         
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="nutritionInfo"><g:message code="food.nutritionInfo.label" default="Nutrition Info" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: foodInstance, field: 'nutritionInfo', 'errors')}">
+                                    <g:select name="nutritionInfo.id" from="${com.summitbid.coach.nutrition.NutritionInfo.list()}" optionKey="id" value="${foodInstance?.nutritionInfo?.id}" noSelection="['null': '']" />
+                                </td>
+                            </tr>
+                        
                         </tbody>
                     </table>
                 </div>

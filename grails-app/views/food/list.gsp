@@ -26,6 +26,8 @@
                         
                             <g:sortableColumn property="name" title="${message(code: 'food.name.label', default: 'Name')}" />
                         
+                            <th><g:message code="food.nutritionInfo.label" default="Nutrition Info" /></th>
+                        
                         </tr>
                     </thead>
                     <tbody>
@@ -35,6 +37,8 @@
                             <td><g:link action="show" id="${foodInstance.id}">${fieldValue(bean: foodInstance, field: "id")}</g:link></td>
                         
                             <td>${fieldValue(bean: foodInstance, field: "name")}</td>
+                        
+                            <td>${fieldValue(bean: foodInstance, field: "nutritionInfo")}</td>
                         
                         </tr>
                     </g:each>

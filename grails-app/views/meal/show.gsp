@@ -30,6 +30,13 @@
                         </tr>
                     
                         <tr class="prop">
+                            <td valign="top" class="name"><g:message code="meal.name.label" default="Name" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: mealInstance, field: "name")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
                             <td valign="top" class="name"><g:message code="meal.foods.label" default="Foods" /></td>
                             
                             <td valign="top" style="text-align: left;" class="value">

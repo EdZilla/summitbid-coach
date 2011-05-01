@@ -28,6 +28,33 @@
                     <table>
                         <tbody>
                         
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="name"><g:message code="nutritionInfo.name.label" default="Name" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: nutritionInfoInstance, field: 'name', 'errors')}">
+                                    <g:textField name="name" value="${nutritionInfoInstance?.name}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="calories"><g:message code="nutritionInfo.calories.label" default="Calories" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: nutritionInfoInstance, field: 'calories', 'errors')}">
+                                    <g:textField name="calories" value="${fieldValue(bean: nutritionInfoInstance, field: 'calories')}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="gramsFat"><g:message code="nutritionInfo.gramsFat.label" default="Grams Fat" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: nutritionInfoInstance, field: 'gramsFat', 'errors')}">
+                                    <g:textField name="gramsFat" value="${fieldValue(bean: nutritionInfoInstance, field: 'gramsFat')}" />
+                                </td>
+                            </tr>
+                        
                         </tbody>
                     </table>
                 </div>

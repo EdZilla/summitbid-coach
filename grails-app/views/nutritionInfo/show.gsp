@@ -29,6 +29,27 @@
                             
                         </tr>
                     
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="nutritionInfo.name.label" default="Name" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: nutritionInfoInstance, field: "name")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="nutritionInfo.calories.label" default="Calories" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: nutritionInfoInstance, field: "calories")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="nutritionInfo.gramsFat.label" default="Grams Fat" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: nutritionInfoInstance, field: "gramsFat")}</td>
+                            
+                        </tr>
+                    
                     </tbody>
                 </table>
             </div>

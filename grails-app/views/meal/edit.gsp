@@ -33,6 +33,15 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="name"><g:message code="meal.name.label" default="Name" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: mealInstance, field: 'name', 'errors')}">
+                                    <g:textField name="name" value="${mealInstance?.name}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="foods"><g:message code="meal.foods.label" default="Foods" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: mealInstance, field: 'foods', 'errors')}">

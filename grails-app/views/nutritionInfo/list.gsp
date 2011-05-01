@@ -24,6 +24,12 @@
                         
                             <g:sortableColumn property="id" title="${message(code: 'nutritionInfo.id.label', default: 'Id')}" />
                         
+                            <g:sortableColumn property="name" title="${message(code: 'nutritionInfo.name.label', default: 'Name')}" />
+                        
+                            <g:sortableColumn property="calories" title="${message(code: 'nutritionInfo.calories.label', default: 'Calories')}" />
+                        
+                            <g:sortableColumn property="gramsFat" title="${message(code: 'nutritionInfo.gramsFat.label', default: 'Grams Fat')}" />
+                        
                         </tr>
                     </thead>
                     <tbody>
@@ -31,6 +37,12 @@
                         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
                         
                             <td><g:link action="show" id="${nutritionInfoInstance.id}">${fieldValue(bean: nutritionInfoInstance, field: "id")}</g:link></td>
+                        
+                            <td>${fieldValue(bean: nutritionInfoInstance, field: "name")}</td>
+                        
+                            <td>${fieldValue(bean: nutritionInfoInstance, field: "calories")}</td>
+                        
+                            <td>${fieldValue(bean: nutritionInfoInstance, field: "gramsFat")}</td>
                         
                         </tr>
                     </g:each>
