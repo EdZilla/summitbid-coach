@@ -4,6 +4,7 @@ import grails.test.*
 
 /**
  * Test Abstract activity
+ * @author Ed Young
  */
 class ActivityTests extends GroovyTestCase {
     protected void setUp() {
