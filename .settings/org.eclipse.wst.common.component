@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="SuperCoach"/>
+    <wb-module deploy-name="SuperCoach">
+        <wb-resource deploy-path="/" source-path="/grails-app/utils"/>
+        <wb-resource deploy-path="/" source-path="/.link_to_grails_plugins/code-coverage-1.1.8/grails-app/i18n"/>
+        <wb-resource deploy-path="/" source-path="/.link_to_grails_plugins/easyb-2.0.5/src/groovy"/>
+        <wb-resource deploy-path="/" source-path="/.link_to_grails_plugins/tomcat-1.3.7/src/groovy"/>
+    </wb-module>
 </project-modules>
