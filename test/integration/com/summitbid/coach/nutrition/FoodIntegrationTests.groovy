@@ -2,7 +2,7 @@ package com.summitbid.coach.nutrition
 
 import grails.test.*
 
-class FoodTests extends GroovyTestCase {
+class FoodIntegrationTests extends GroovyTestCase {
     protected void setUp() {
         super.setUp()
     }
