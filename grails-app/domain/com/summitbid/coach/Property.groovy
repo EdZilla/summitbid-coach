@@ -1,46 +1,21 @@
 package com.summitbid.coach
 
+import com.summitbid.coach.activity.Activity
+import com.summitbid.coach.nutrition.Food
+import com.summitbid.coach.nutrition.Meal
+import com.summitbid.coach.nutrition.MealPlan
+
 /**
  
  */
 class Property extends BaseDomain {
-  String type
-  SortedSet types
-  SortedSet propertyValues
-  SortedSet propertyMetadata
-  Boolean isDefault = false
+	
+	String value
+
+	static belongsTo = [ Food]
   
-  /*
-   * 
-   */
-  static hasMany = [ entities            : BaseDomain,
-                     propertyValues   : PropertyValue ]
-  
+	static constraints = {
+	  value(nullable:false)
+	}
 
-  static mappedBy = [propertyValues:'dynaProperty']
-
-  static belongsTo = [ BaseDomain ]
-  static possibleTypes = [ "Text", "Number", "List", "Date" ]
-  static transients = [ possibleTypes ]
-
-  static constraints = {
-    name(nullable: false, blank: false)
-    types(nullable:true)
-    isDefault(nullable:true, default:true)
-  }
-
-  String getValue(BaseDomain entity) {
-    getPropertyValue(entity)?.value
-  }
-
-  PropertyValue getPropertyValue(BaseDomain entity) {
-    PropertyValue returnValue
-    propertyValues.each { propertyValue ->
-      if(propertyValue.entity == entity) {
-        returnValue = propertyValue
-      }
-    }
-
-    returnValue
-  }
 }

@@ -44,6 +44,19 @@
                         </tr>
                     
                         <tr class="prop">
+                            <td valign="top" class="name"><g:message code="exercise.properties.label" default="Properties" /></td>
+                            
+                            <td valign="top" style="text-align: left;" class="value">
+                                <ul>
+                                <g:each in="${exerciseInstance.properties}" var="p">
+                                    <li><g:link controller="property" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
+                                </g:each>
+                                </ul>
+                            </td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
                             <td valign="top" class="name"><g:message code="exercise.start.label" default="Start" /></td>
                             
                             <td valign="top" class="value"><g:formatDate date="${exerciseInstance?.start}" /></td>

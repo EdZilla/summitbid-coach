@@ -51,6 +51,15 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="properties"><g:message code="exercise.properties.label" default="Properties" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: exerciseInstance, field: 'properties', 'errors')}">
+                                    <g:select name="properties" from="${com.summitbid.coach.Property.list()}" multiple="yes" optionKey="id" size="5" value="${exerciseInstance?.properties*.id}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="start"><g:message code="exercise.start.label" default="Start" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: exerciseInstance, field: 'start', 'errors')}">
